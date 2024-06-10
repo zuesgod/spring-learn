@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="clazzOne" class="com.zues.entity.Clazz">
+        <property name="clazzId" value="1111"></property>
+        <property name="clazzName" value="财源滚滚班"></property>
+        <property name="students">
+            <list>
+                <ref bean="student1"></ref>
+                <ref bean="student2"></ref>
+            </list>
+        </property>
+    </bean>
+
+    <!--
+        配置HelloWorld所对应的bean，即将HelloWorld的对象交给Spring的IOC容器管理
+        通过bean标签配置IOC容器所管理的bean
+        属性：
+        id：设置bean的唯一标识
+        class：设置bean所对应类型的全类名
+    -->
+    <bean id="student1" class="com.zues.entity.Student">
+        <!-- property标签：通过组件类的setXxx()方法给组件对象设置属性 -->
+        <!-- name属性：指定属性名（这个属性名是getXxx()、setXxx()方法定义的，和成员变量无关）
+        -->
+        <!-- value属性：指定属性值 -->
+        <property name="id" value="1001"></property>
+        <property name="name" value="张三"></property>
+        <property name="age" value="23"></property>
+        <property name="sex">
+            <null/>
+        </property>
+        <!-- ref属性：引用IOC容器中某个bean的id，将所对应的bean为属性赋值 -->
+        <!--        <property name="clazz" ref="clazzOne"/>-->
+        <!--内部bean-->
+        <!--        <property name="clazz">-->
+        <!--            &lt;!&ndash; 在一个bean中再声明一个bean就是内部bean &ndash;&gt;-->
+        <!--            &lt;!&ndash; 内部bean只能用于给属性赋值，不能在外部通过IOC容器获取，因此可以省略id属性 &ndash;&gt;-->
+        <!--            <bean id="clazzInner" class="com.zues.entity.Clazz">-->
+        <!--                <property name="clazzId" value="2222"></property>-->
+        <!--                <property name="clazzName" value="远大前程班"></property>-->
+        <!--            </bean>-->
+        <!--        </property>-->
+        <!--级联属性-->
+        <!--        <property name="clazz" ref="clazzOne"></property>-->
+        <!--        <property name="clazz.clazzId" value="3333"></property>-->
+        <!--        <property name="clazz.clazzName" value="最强王者班"></property>-->
+        <property name="hobbies">
+            <array>
+                <value>抽烟</value>
+                <value>喝酒</value>
+                <value>烫头</value>
+            </array>
+        </property>
+    </bean>
+
+    <!-- 有参构造测试 -->
+    <bean id="student2" class="com.zues.entity.Student">
+        <constructor-arg value="1002"/>
+        <constructor-arg value="zues"/>
+        <constructor-arg value="18"/>
+        <constructor-arg value="男"/>
+        <constructor-arg ref="clazzOne"/>
+        <constructor-arg name="hobbies">
+            <array>
+                <value>抽烟1</value>
+                <value>喝酒1</value>
+                <value>烫头1</value>
+            </array>
+        </constructor-arg>
+    </bean>
+
+    <!-- 引入外部属性文件 -->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+    <bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="url" value="${jdbc.url}"/>
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="username" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+</beans>

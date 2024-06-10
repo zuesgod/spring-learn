@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bbd4f277-e9f7-4e49-9e4c-d1bc8cc6956d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/main/java/com/zues/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/main/java/com/zues/config/MyBeanProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/main/java/com/zues/config/UserFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/main/java/com/zues/entity/Clazz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/main/java/com/zues/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/main/java/com/zues/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/main/resources/spring-beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/main/resources/spring-userbean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring6-first/src/test/java/com/zues/AppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\envioment\maven-repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../envioment/maven-3.9.3" />
+        <option name="userSettingsFile" value="D:\envioment\maven-3.9.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2hd9yRyv4A7cnnCBDiYFcpin2gE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "a9d7e6fe560bdee2d16eff98082c41ea",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.AppTest.testUserFactoryBean">
+    <configuration name="AppTest.testDI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zues" />
+      <option name="MAIN_CLASS_NAME" value="com.zues.AppTest" />
+      <option name="METHOD_NAME" value="testDI" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testDataSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zues" />
+      <option name="MAIN_CLASS_NAME" value="com.zues.AppTest" />
+      <option name="METHOD_NAME" value="testDataSource" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testHelloWorld" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zues" />
+      <option name="MAIN_CLASS_NAME" value="com.zues.AppTest" />
+      <option name="METHOD_NAME" value="testHelloWorld" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testLifeCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zues" />
+      <option name="MAIN_CLASS_NAME" value="com.zues.AppTest" />
+      <option name="METHOD_NAME" value="testLifeCycle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testUserFactoryBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring6-first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zues" />
+      <option name="MAIN_CLASS_NAME" value="com.zues.AppTest" />
+      <option name="METHOD_NAME" value="testUserFactoryBean" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AppTest.testUserFactoryBean" />
+        <item itemvalue="JUnit.AppTest.testLifeCycle" />
+        <item itemvalue="JUnit.AppTest.testDataSource" />
+        <item itemvalue="JUnit.AppTest.testDI" />
+        <item itemvalue="JUnit.AppTest.testHelloWorld" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbd4f277-e9f7-4e49-9e4c-d1bc8cc6956d" name="Changes" comment="" />
+      <created>1717913342837</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717913342837</updated>
+      <workItem from="1717913343942" duration="10104000" />
+      <workItem from="1718019056158" duration="977000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spring_learn$AppTest_testDI.ic" NAME="AppTest.testDI Coverage Results" MODIFIED="1717933877684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.zues.*</FILTER>
+    </SUITE>
+  </component>
+</project>
